@@ -1,0 +1,62 @@
+//////Insert AT Bottom in Stack
+
+import java.util.*;
+public class InsertAtBottom{
+
+////Logic///
+public static Stack<Integer>s = new Stack<Stack<Integer>s,data);
+
+if(s.isEmpty()){
+s.push(data);
+return s;
+}
+int top = s.pop();
+InserAtBottom(s,data);
+s.push(top);
+return s;
+
+public static void main(String[] args){
+Stack<Integer> s = new Stack<>();
+s.push('1');
+s.push('2');
+s.push('3');
+
+InsertAtBottomElement(s,data);
+
+
+while(!s.isEmpty){
+System.out.println(s.pop());
+}
+
+}
+
+
+
+
+
+//////Reverse String ///////
+
+import java.util.*;
+public class Stack03{
+static String ReverseString(String str){
+Stack<Character> st = new Stack<>();
+int ind = 0;
+while(ind < str.length()){
+
+st.push(str.charAt(i));
+ind++;
+}
+
+StringBuilder s = new StringBuilder("");
+while(!st.isEmpty()){
+s.append(st.pop());
+
+}
+return s.toString();
+}
+
+public static void main(String []args){
+String str = "Jai Shree Krishna";
+ReverseString(str);
+}
+}

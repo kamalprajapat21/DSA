@@ -1,0 +1,23 @@
+when we implemet the stack using two queue 
+
+"
+In Java, the Queue interface does not define push() or pop() methods. Instead, it uses methods like offer(), poll(), and add() to manipulate elements. These methods have specific meanings and are part of the standard Java Collections Framework.
+
+Here's why you cannot use push or pop for Queue:
+
+1. push and pop belong to the Stack class:
+The push() and pop() methods are defined in the Stack class in Java, which is part of the java.util package. They are specific to the Stack data structure (LIFO behavior).
+For Queue (FIFO behavior), the correct methods are offer() (to add elements) and poll() (to remove elements).
+2. What happens if you try to use push() or pop() with Queue?
+If you call q1.push() or q1.pop() on an object of type Queue, the compiler will throw an error, as these methods are not part of the Queue interface or its common implementations (LinkedList or PriorityQueue).
+3. Correct methods for Queue:
+Adding elements: Use offer() (preferred) or add().
+offer() returns true if the element was successfully added or false if it wasn't (e.g., for bounded queues).
+add() throws an exception if the operation fails.
+Removing elements: Use poll() (preferred) or remove().
+poll() removes and returns the head of the queue or returns null if the queue is empty.
+remove() throws an exception if the queue is empty.
+4. If you want to use push and pop, you must switch to Deque:
+The Deque interface (Double-Ended Queue), which is implemented by classes like LinkedList and ArrayDeque, supports both stack and queue operations.
+Deque provides push() and pop() methods to use the Deque as a stack.
+"

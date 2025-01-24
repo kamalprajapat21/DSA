@@ -48,3 +48,8 @@ public class QueueB {
         System.out.println(stack.pop()); // Output: -1 (stack is empty)
     }
 }
+
+
+/*
+ Queue/NonRepeatingCharacter
+ */

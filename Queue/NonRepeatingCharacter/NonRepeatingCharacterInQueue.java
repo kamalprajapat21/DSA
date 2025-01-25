@@ -10,7 +10,7 @@ for(int i = 0;i<str.length();i++){
     q.add(ch);
     freq[ch-'a']++;
 
-    while(!q.isEmpty() && freq[ch - 'a']>1){
+    while(!q.isEmpty() && freq[q.peek()-'a']>1){
         q.remove(ch);
     }
     if(q.isEmpty()){

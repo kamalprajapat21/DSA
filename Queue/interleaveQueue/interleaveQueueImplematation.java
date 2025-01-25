@@ -5,6 +5,7 @@ public static void QueueC(Queue<Integer> q){
     Queue<Integer> first = new LinkedList<>();
 
     for(int i = 0;i<n/2;i++){
+        //if we use n ---> q.size() this give us different ans bcz q.size() is variable but we need fix value here so////
         first.add(q.remove());
     }
 while(!first.isEmpty()){

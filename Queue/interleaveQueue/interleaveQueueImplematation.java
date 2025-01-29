@@ -4,7 +4,7 @@ public static void QueueC(Queue<Integer> q){
     int n = q.size();
     Queue<Integer> first = new LinkedList<>();
 
-    for(int i = 0;i<n/2;i++){
+    for(int i = 0;i<q.size()/2;i++){
         first.add(q.remove());
     }
 while(!first.isEmpty()){

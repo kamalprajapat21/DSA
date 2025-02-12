@@ -3,6 +3,18 @@
 ✅ Easier & Cleaner → No need to write a loop manually.
 ✅ Built-in Formatting → Adds brackets and commas automatically.
 ✅ Works with Any Array Type → Can be used with int[], double[], char[], etc.
+
+
+
+Alternative: Printing with a Loop
+You could also use a loop, but it's more verbose:
+
+java
+Copy
+Edit
+for (int num : nums) {
+    System.out.print(num + " ");
+}
  */
 
 import java.util.*;

@@ -1,0 +1,6 @@
+Both String.valueOf(num) and Integer.toString(num) are used to convert an int to a String
+
+
+String.valueOf(num) ----> if(num == Null) ----> return Null (Handle null value)
+
+Integer.toString(num) ---> if(num == Null) ---> show error NULLPOINTEREXCEPTION

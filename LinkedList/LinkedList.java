@@ -168,6 +168,7 @@ public class LinkedList {
 
         ll.printList();
         ll.deleteNode(3);
+        ll.reverse();
 
         System.out.print("Size after deletion: " + ll.size);
         System.out.println();
